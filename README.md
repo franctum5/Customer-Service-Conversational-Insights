@@ -8,6 +8,11 @@ This is typically unstructured data that, if processed, can result in a great am
 
 The Customer Service Conversational Insights is a solution accelerator built on top of Cognitive Search, Bot Framework, LUIS-D and Text Analytics that allows customers to quickly deploy an integrated platform and immediately start extracting insights from customer conversations.
 
+## [Navigate demo site [Click here]](https://conversationalkm.azurewebsites.net/)
+Demo site is build on hotel and travel booking conversations. Search for city name to get started (e.g. seattle, milan, etc...)
+
+## [Setup scripts and instructions [Click here]](https://github.com/franctum5/Customer-Service-Conversational-Insights/tree/master/infrastructure)
+
 
 ![alt text](images/conversationalkm_architecture.PNG "Conversational Knowledge Mining Architecture")
 

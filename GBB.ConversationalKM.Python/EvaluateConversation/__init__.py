@@ -139,7 +139,7 @@ def get_evaluation(msg):
     # Filter for Conversation Id
     query_fiter = f"PartitionKey eq 'convs-quality' and RowKey eq '{conversation_id}'"    
     evaluation = list(table_service.query_entities(os.environ.get('table_sample_data'), filter= query_fiter))
-    return int(evaluation[0].get('userSurveyRating')) if evaluation[0].get('userSurveyRating') != None else None
+    return int(evaluation[0].get('userSurveyRating')) if len(evaluation) > 0 and evaluation[0].get('userSurveyRating') != None else None
 
 
 # Check if a leaf node has been reached
@@ -152,7 +152,7 @@ def get_leaf(msg):
     # Filter for Conversation Id
     query_fiter = f"PartitionKey eq 'convs-quality' and RowKey eq '{conversation_id}'"    
     evaluation = list(table_service.query_entities(os.environ.get('table_sample_data'), filter= query_fiter))
-    return int(evaluation[0].get('wizardSurveyTaskSuccessful')) if evaluation[0].get('wizardSurveyTaskSuccessful') != None else None
+    return int(evaluation[0].get('wizardSurveyTaskSuccessful')) if len(evaluation) > 0 and evaluation[0].get('wizardSurveyTaskSuccessful') != None else None
 
 
 # Compute Average sentiment
