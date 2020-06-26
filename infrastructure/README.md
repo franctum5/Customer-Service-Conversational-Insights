@@ -1,3 +1,9 @@
+Pre-Requirements:
+-   [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+-   [Azure Function Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#v2)
+-   [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7)
+
+
 The "resource_creation.ps1" script creates the following resources:
 
 YOU CAN CONFIGURE YOUR OWN RESOURCES IN config.json FILE
